@@ -1,0 +1,93 @@
+  :root{
+    --bs-primary:#1E63E9;
+    --bs-primary-rgb:30,99,233;
+    --bs-body-font-family:'Inter', sans-serif;
+    --bs-link-color:#1E63E9;
+    --bs-link-hover-color:#1854c9;
+    --navy:#0B2545;
+    --deep-blue:#13315C;
+    --azure:#1E63E9;
+    --sky:#5B9DF9;
+    --pale:#EAF2FF;
+  }
+  body{background:#F4F8FF; color:#10233F;}
+  h1,h2,h3,h4,h5,.navbar-brand,.balance-amount{font-family:'Space Grotesk', sans-serif;}
+  .text-navy{color:var(--navy) !important;}
+  .bg-navy{background-color:var(--navy) !important;}
+  .bg-pale{background-color:var(--pale) !important;}
+
+  /* ---------- Navbar ---------- */
+  .navbar-dark .nav-link{color:#C9D9F5; font-weight:500; font-size:0.92rem;}
+  .navbar-dark .nav-link:hover{color:#fff;}
+  .navbar-dark .nav-link.active{color:#fff; border-bottom:2px solid var(--sky);}
+  .logo-mark{
+    width:34px; height:34px; border-radius:9px;
+    background:linear-gradient(135deg, var(--azure), var(--sky));
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .btn-icon{
+    width:38px; height:38px; border-radius:9px;
+    background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14);
+    color:#fff; display:flex; align-items:center; justify-content:center;
+  }
+  .btn-icon:hover{background:rgba(255,255,255,0.16); color:#fff;}
+  .notif-dot{
+    position:absolute; top:6px; right:7px; width:7px; height:7px; border-radius:50%;
+    background:var(--sky); border:1.5px solid var(--navy);
+  }
+  .btn-user{
+    background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14);
+    color:#fff; border-radius:10px;
+  }
+  .btn-user:hover, .btn-user:focus{background:rgba(255,255,255,0.16); color:#fff;}
+  .avatar{
+    width:30px; height:30px; border-radius:50%;
+    background:linear-gradient(135deg, var(--sky), var(--azure));
+    display:flex; align-items:center; justify-content:center;
+    font-weight:700; font-size:0.8rem; color:#fff; flex-shrink:0;
+  }
+  .dropdown-menu{border-radius:12px; border-color:#DCE7F9;}
+  .dropdown-item{border-radius:8px; padding:0.6rem 0.75rem; font-size:0.9rem;}
+  .dropdown-item:hover{background:var(--pale);}
+  .dropdown-item.text-danger:hover{background:#FDECEC;}
+
+  /* ---------- Balance card ---------- */
+  .balance-card{background:linear-gradient(135deg, var(--navy), var(--deep-blue) 60%, #0F3D7A); position:relative; overflow:hidden;}
+  .balance-card::after{
+    content:""; position:absolute; right:-100px; top:-100px; width:320px; height:320px; border-radius:50%;
+    background:radial-gradient(circle, rgba(91,157,249,0.25), transparent 70%);
+  }
+  .balance-card .card-body{position:relative; z-index:2;}
+  .balance-amount{font-weight:700; font-size:clamp(1.9rem, 4vw, 2.7rem);}
+  .balance-change{background:rgba(31,169,113,0.18); color:#7BE0AE; font-weight:600; padding:0.45rem 0.85rem;}
+  .mini-stat{background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); border-radius:12px; padding:14px 16px;}
+
+  /* ---------- Live dot ---------- */
+  .live-dot{width:7px; height:7px; border-radius:50%; background:#1FA971; display:inline-block; flex-shrink:0;}
+
+  /* ---------- Market table ---------- */
+  .market-table td, .market-table th{vertical-align:middle;}
+  .market-table thead th{font-size:0.75rem; text-transform:uppercase; letter-spacing:0.03em; color:#5D7290; border-bottom-width:1px;}
+  .coin-icon{
+    width:30px; height:30px; border-radius:50%; background:var(--pale); color:var(--azure);
+    display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.75rem; flex-shrink:0;
+  }
+  .spark{width:80px; height:28px;}
+  .change-pill svg{width:11px; height:11px;}
+
+  /* ---------- Allocation ---------- */
+  .alloc-bar{height:8px; border-radius:6px;}
+  .progress{background-color:var(--pale);}
+  .progress-bar{background:linear-gradient(90deg, var(--azure), var(--sky));}
+
+  /* ---------- Modal ---------- */
+  .form-label{font-weight:600; font-size:0.85rem;}
+  .modal-content{border:none;}
+
+  /* On small phones, keep the notification bell but drop its label text (there is none, so nothing to hide) */
+  @media (max-width: 451px){
+    .balance-amount{font-size:1.9rem;}
+  }
+  img{ 
+    border-radius:  10px;
+  }
