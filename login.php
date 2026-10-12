@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
 
     <!-- ===================== LEFT BRAND PANEL ===================== -->
     <div class="brand-panel">
-      <a href="Attilan.html" class="brand">
+      <a href="index.php" class="brand">
 
         AttilanTrade
       </a>

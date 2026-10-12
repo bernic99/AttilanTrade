@@ -156,7 +156,7 @@ if(array_filter($errors)){
 
     <!-- ===================== LEFT BRAND PANEL ===================== -->
     <div class="brand-panel">
-      <a href="Attilan.html" class="brand">
+      <a href="index.php" class="brand">
       
         AttilanTrade
       </a>
